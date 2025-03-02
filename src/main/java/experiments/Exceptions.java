@@ -22,7 +22,7 @@ public class Exceptions {
         System.out.println("program is working");
     }
 
-    private static void pause() {
+    public static void pause() {
         try {
             checkedException();
         } catch (InterruptedException e) {
