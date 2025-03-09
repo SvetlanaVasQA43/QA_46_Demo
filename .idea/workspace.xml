@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="438fb647-86c5-4a69-9b41-ee9168dbce5d" name="Changes" comment="created Exceptions">
-      <change afterPath="$PROJECT_DIR$/src/main/java/experiments/CssSelectors.java" afterDir="false" />
+    <list default="true" id="438fb647-86c5-4a69-9b41-ee9168dbce5d" name="Changes" comment="created Csselector">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/experiments/Exceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/experiments/Exceptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/experiments/CssSelectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/experiments/CssSelectors.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +28,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SvetlanaVasQA43&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SvetlanaVasQA43/QA_46_Demo.git&quot;,
+    &quot;accountId&quot;: &quot;a1512e66-be6d-48c0-ab8e-ec6a01393cee&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -46,17 +57,20 @@
     "Gradle.QA_46_Demo [:Exceptions.main()].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.CssSelectors.SelectorElementsPage.executor": "Run",
+    "TestNG.CssSelectors.SelectorRadioButtonPage.executor": "Run",
     "TestNG.CssSelectors.selectorsHomePage.executor": "Run",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.CssSelectors.selectorsHomePage">
+  <component name="RunManager" selected="TestNG.CssSelectors.SelectorRadioButtonPage">
     <configuration name="Exceptions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="experiments.Exceptions" />
       <module name="QA_46_Demo.main" />
@@ -66,6 +80,42 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CssSelectors.SelectorElementsPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_46_Demo.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="experiments.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="experiments" />
+      <option name="MAIN_CLASS_NAME" value="experiments.CssSelectors" />
+      <option name="METHOD_NAME" value="SelectorElementsPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CssSelectors.SelectorRadioButtonPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_46_Demo.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="experiments.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="experiments" />
+      <option name="MAIN_CLASS_NAME" value="experiments.CssSelectors" />
+      <option name="METHOD_NAME" value="SelectorRadioButtonPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,6 +140,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CssSelectors.SelectorRadioButtonPage" />
+        <item itemvalue="TestNG.CssSelectors.SelectorElementsPage" />
         <item itemvalue="TestNG.CssSelectors.selectorsHomePage" />
         <item itemvalue="Application.Exceptions" />
       </list>
@@ -112,11 +164,20 @@
       <option name="project" value="LOCAL" />
       <updated>1740595171871</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created Csselector">
+      <option name="closed" value="true" />
+      <created>1740941338318</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740941338318</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created Exceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="created Exceptions" />
+    <MESSAGE value="created Csselector" />
+    <option name="LAST_COMMIT_MESSAGE" value="created Csselector" />
   </component>
 </project>

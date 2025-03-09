@@ -1,6 +1,6 @@
 package experiments;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
@@ -8,19 +8,100 @@ public class CssSelectors {
     WebDriver driver = new ChromeDriver();
 
     @Test
-    public void selectorsHomePage(){
-       // driver.navigate().to("https://demoqa.com/");
+    public void selectorsHomePage() {
+        // driver.navigate().to("https://demoqa.com/");
         // driver.navigate().back("https://demoqa.com/");
         driver.get("https://demoqa.com/");
         driver.manage().window().maximize();
+        hideBanner();
+        hideFooter();
 
+        pause(3);
+
+        WebElement imgTools = driver.findElement(By.cssSelector("img[src='/images/Toolsqa.jpg']"));
+        System.out.println(imgTools.getTagName());
+        System.out.println(imgTools.getAttribute("src"));
+
+        WebElement footer = driver.findElement(By.tagName("footer"));
+        pause(5);
+        WebElement divElements = driver.findElement(By.cssSelector(".card-up"));
+        divElements.click();
+        pause(5);
+
+
+        // driver.close();
+        driver.quit();
+    }
+
+    public void pause(int time) {
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-       // driver.close();
+
+
+    }
+
+    public void hideBanner() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("document.querySelector('#fixedban').style.display='none'");
+    }
+
+    public void hideFooter() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("document.querySelector('footer').style.display='none'");
+    }
+    @Test
+    public void SelectorElementsPage(){
+        driver.get("https://demoqa.com/elements");
+        driver.manage().window().maximize();
+        hideBanner();
+        hideFooter();
+
+        WebElement textBox = driver.findElement(By.cssSelector("li[id='item-0']"));
+       // WebElement textBox = driver.findElement(By.id("item-0"));
+       // WebElement textBox = driver.findElement(By.cssSelector("#item-0"));
+        System.out.println(textBox.getAttribute("class"));
+
+       // WebElement checkBox = driver.findElement(By.cssSelector("[id='item-1']"));
+       // WebElement checkBox = driver.findElement(By.id("item-1"));
+       // WebElement checkBox = driver.findElement(By.cssSelector("#item-1"));
+        WebElement checkBox = driver.findElement(By.cssSelector("li[id='item-1']"));
+        checkBox.click();
+
+
+        pause(5);
+
+
         driver.quit();
+
+    }
+    @Test
+    public void SelectorRadioButtonPage() {
+        driver.get("https://demoqa.com/radio-button");
+        driver.manage().window().maximize();
+        hideBanner();
+        hideFooter();
+
+        //WebElement radioButtonYes = driver.findElement(By.cssSelector("label[for='yesRadio']"));
+       // WebElement radioButtonYes = driver.findElement(By.cssSelector("[for='yesRadio']"));
+        WebElement radioButtonYes = driver.findElement(By.className("custom-control-label"));
+       // WebElement radioButtonYes = driver.findElement(By.cssSelector(".custom-control-label"));
+
+        radioButtonYes.click();
+        pause(5);
+
+       // WebElement impressiveButton = driver.findElement(By.id("impressiveRadio")); - ne pabotaet, padaet
+        WebElement impressiveButton = driver.findElement(By.cssSelector("[for='impressiveRadio']"));
+        impressiveButton.click();
+
+
+
+       pause(5);
+       driver.quit();
+
+
     }
 
 }
