@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="438fb647-86c5-4a69-9b41-ee9168dbce5d" name="Changes" comment="created Csselector 1+">
-      <change afterPath="$PROJECT_DIR$/src/main/java/experiments/XpathSelectors.java" afterDir="false" />
+    <list default="true" id="438fb647-86c5-4a69-9b41-ee9168dbce5d" name="Changes" comment="created Csselector 1+1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ajax_element/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ajax_element/PrimerAjax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/manager/AppManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/FormsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/PracticeFormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ajaxtests/PrimerAjaxTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/PracticeFormTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/experiments/CssSelectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/experiments/CssSelectors.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,13 +214,22 @@
       <option name="project" value="LOCAL" />
       <updated>1741547101778</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="created Csselector 1+1">
+      <option name="closed" value="true" />
+      <created>1741805973611</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741805973611</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created Exceptions" />
     <MESSAGE value="created Csselector" />
     <MESSAGE value="created Csselector 1+" />
-    <option name="LAST_COMMIT_MESSAGE" value="created Csselector 1+" />
+    <MESSAGE value="created Csselector 1+1" />
+    <option name="LAST_COMMIT_MESSAGE" value="created Csselector 1+1" />
   </component>
 </project>
